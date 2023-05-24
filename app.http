@@ -17,12 +17,16 @@ get http://localhost:3000/movies/:movieId/
 
 ###
 put http://localhost:3000/movies/:movieId/
+Content-Type: application/json
 
 {
   "directorId": 24,
   "movieName": "Thor",
   "leadActor": "Christopher Hemsworth"
 }
+
+###
+DELETE http://localhost:3000/movies/:movieId/
 
 ###
 get http://localhost:3000/directors/
